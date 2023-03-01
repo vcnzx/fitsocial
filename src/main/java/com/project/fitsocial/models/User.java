@@ -44,9 +44,8 @@ public class User {
     @Size(min=8, max=128, message="Confirm Password must be between 8 and 128 characters")
     private String confirm;
 
-    // @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    // // if the user has books what would be the data type? a list of courses 
-    // private List<Course> courses;
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Workout> workouts;
 
   
     public User() {}
