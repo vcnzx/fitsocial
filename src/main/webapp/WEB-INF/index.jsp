@@ -18,7 +18,82 @@
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
-<body>
-    <h1>FitSocial</h1>
+<style>
+    .bg-image{
+        background-image: url("../Users/adrianlopez/Documents/fitsocial/src/main/resources/images/fitsocial.jpg");
+    }
+</style>
+<body class="bg-image">
+
+
+<div class="container" style="height:100px;"></div>
+    <div class="container bg-light border" style="width: 350px ;">
+        ${userId}
+        <div class="container">
+        <h1 class="text-center mb-3 mt-3">Fit Social</h1>
+    <div class="container">
+            <div class="col">
+            <h2 class="text-center">Already a member?</h2>
+            <div class="form-group">
+                <form:form action="/login" method="post" modelAttribute="newLogin">
+                <div class="form-group mb-1">
+                    <form:label path="email" >email</form:label>
+                    <form:input class="form-control" path="email" />
+                    <form:errors path="email" />
+                </div>
+                <div class="form-group mb-1">
+                <form:label path="password" >password</form:label>
+                <form:input class="form-control" path="password" />
+                <form:errors path="password" />
+                </div>
+                <input class="mb-1 mt-2 btn btn-danger" type="submit" value="login">
+            </form:form>
+        </div>
+        </div>
+        </div>
+        <!-- this is reg -->
+        <div class="row">
+            <h2 class="text-center">Sign-up</h2>
+    
+            <form:form action="/register" method="post" modelAttribute="newUser">
+    
+            <div>
+            <div class="form-group mt-1">
+                <form:label path="userName">User Name</form:label>
+                <form:input class="form-control" path="userName" />
+                <form:errors  path="userName" />
+            </div>
+
+            <div class="form-group mt-1">
+                <form:label path="fullName">Full Name</form:label>
+                <form:input class="form-control" path="fullName" />
+                <form:errors  path="fullName" />
+            </div>
+    
+            <div class="form-group mt-1">
+                <form:label path="email">email</form:label>
+                <form:input class="form-control" path="email" />
+                <form:errors  path="email" />
+            </div>
+                
+            <div>
+                <form:label path="password">password</form:label>
+                <form:input class="form-control mt-1" path="password" />
+                <form:errors  path="password" />
+            </div>
+    
+            <div>
+                <form:label path="confirm">confirm password</form:label>
+                <form:input class="form-control mt-1" path="confirm" />
+                <form:errors  path="confirm" />
+            </div>
+            </div>
+            <input class="mt-3 mb-3 btn btn-danger border" type="submit" value="Register">
+            </form:form>
+    
+        </div>
+        </div>    
+    
+    </div>
 </body>
 </html>
