@@ -19,7 +19,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/hero2.jpg");
+        background-image: url("/images/heroblue.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
