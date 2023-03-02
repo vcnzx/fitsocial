@@ -25,19 +25,14 @@ public class PostController {
   @Autowired WorkoutService workoutService;
   
 
-  //create course
+  //create workout
 
   @GetMapping("/workouts/new")
   public String newWorkout(@ModelAttribute("workout")Workout workout){
-    return "workouts/new.jsp";
+    return "workouts/newWorkout.jsp";
   }
 
-  // @PostMapping("/classes")
-  // public String createCourse(@ModelAttribute("course")Course course){
-  //   courseService.addCourse(course);
-    
-  //   return "redirect:/classes";
-  // }
+  
 
   @PostMapping("/workouts")
   public String createWorkout(
@@ -45,7 +40,7 @@ public class PostController {
     @ModelAttribute("workout")Workout workout,
     BindingResult result){
     if(result.hasErrors()){
-      return "workouts/new.jsp";
+      return "workouts/newWorkout.jsp";
     } else {
       workoutService.addWorkout(workout);
     }

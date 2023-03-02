@@ -19,7 +19,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/fitsocial.jpg");
+        background-image: url("/images/hero2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -51,7 +51,7 @@
                         <a href="/workouts" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/create" class="nav-link">Create</a>
+                        <a href="/workouts/new" class="nav-link">Create</a>
                     </li>
                     <li class="nav-item">
                         <a href="/profile" class="nav-link">Profile</a>

@@ -46,36 +46,36 @@
     
             <div>
             <div class="form-group mt-1">
-                <form:label path="userName">User Name</form:label>
-                <form:input class="form-control" path="userName" />
+                <form:label path="userName"></form:label>
+                <form:input class="form-control" placeholder="User Name" path="userName" />
                 <form:errors  path="userName" />
             </div>
 
             <div class="form-group mt-1">
-                <form:label path="fullName">Full Name</form:label>
-                <form:input class="form-control" path="fullName" />
+                <form:label path="fullName"></form:label>
+                <form:input class="form-control" placeholder="Full Name" path="fullName" />
                 <form:errors  path="fullName" />
             </div>
     
             <div class="form-group mt-1">
-                <form:label path="email">email</form:label>
-                <form:input class="form-control" path="email" />
+                <form:label path="email"></form:label>
+                <form:input class="form-control" placeholder="Email" path="email" />
                 <form:errors  path="email" />
             </div>
                 
             <div>
-                <form:label path="password">password</form:label>
-                <form:input class="form-control mt-1" path="password" />
+                <form:label path="password"></form:label>
+                <form:input class="form-control mt-1" placeholder="Password" path="password" />
                 <form:errors  path="password" />
             </div>
     
             <div>
-                <form:label path="confirm">confirm password</form:label>
-                <form:input class="form-control mt-1" path="confirm" />
+                <form:label path="confirm"></form:label>
+                <form:input class="form-control mt-1" placeholder="Confirm Password" path="confirm" />
                 <form:errors  path="confirm" />
             </div>
             </div>
-            <input class="mt-3 mb-3 btn btn-danger border" type="submit" value="Register">
+            <input class="mt-3 mb-3 btn btn-dark border" type="submit" value="Register">
             </form:form>
     
         </div>

@@ -40,13 +40,13 @@
             <div class="form-group">
                 <form:form action="/login" method="post" modelAttribute="newLogin">
                 <div class="form-group mb-1">
-                    <form:label path="email" >email</form:label>
-                    <form:input class="form-control" path="email" />
+                    <form:label path="email" ></form:label>
+                    <form:input class="form-control" placeholder="Email" path="email" />
                     <form:errors path="email" />
                 </div>
                 <div class="form-group mb-1">
-                <form:label path="password" >password</form:label>
-                <form:input class="form-control" path="password" />
+                <form:label path="password" ></form:label>
+                <form:input class="form-control" placeholder="Password" path="password" />
                 <form:errors path="password" />
                 </div>
                 <input class="mb-3 mt-2 btn btn-dark" type="submit" value="login">
@@ -62,7 +62,7 @@
     
     </div>
     <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
-      <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
+      <h6 class="text-center"> Not a member? <a href="/"> Sign Up</a></h6>
   </div>
 
     <footer class="p-5  text-white text-center position-relative mt-3">
