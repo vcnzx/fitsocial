@@ -54,7 +54,7 @@
                         <a href="/workouts/new" class="nav-link">Create</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/profile" class="nav-link">Profile</a>
+                        <a href="/profile/${userId}" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a href="/logout" type="submit" value="logout" class="nav-link"> Logout</a>
@@ -72,7 +72,8 @@
         <div class="card">
             <div class="card-body justify-content-center">
                 
-                ${workout.user.fullName}
+                <a href="/profile/${workout.user.id}">${workout.user.fullName}</a>
+                
                 <h1 class="text-center">${workout.title}</h1>
                 Type of work out:  <h6>${workout.type}</h6>
                 Target muscle: <h6>${workout.targetMuscle}</h6>
