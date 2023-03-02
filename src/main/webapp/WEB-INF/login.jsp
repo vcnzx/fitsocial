@@ -55,13 +55,15 @@
         </div>
         </div>
         </div>
-        <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
-          <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
-      </div>
+    
         
-        </div>    
+        </div>   
+      
     
     </div>
+    <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
+      <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
+  </div>
 
     <footer class="p-5  text-white text-center position-relative mt-3">
         <div class="container">

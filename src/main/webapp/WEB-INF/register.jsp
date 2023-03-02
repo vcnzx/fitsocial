@@ -82,7 +82,7 @@
         </div>  
         
         <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
-            <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
+            <h6 class="text-center"> Already a member? <a href="/login"> Log in</a></h6>
         </div>
     
     </div>
@@ -90,7 +90,7 @@
     <footer class="p-5  text-white text-center position-relative mt-3">
         <div class="container">
             <p class="lead">| Where fitness and social media come together | Copyright &copy; 2022  FitSocial | </p> 
-            <a href="/login" class="position-absolute bottom-0 end-0 p-5">
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-cirle text-danger h1"></i>
             </a>
         </div>
