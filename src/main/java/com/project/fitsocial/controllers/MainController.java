@@ -28,7 +28,7 @@ public class MainController {
     ){
         // Bind empty User and LoginUser objects to the JSP
         // to capture the form input
-        return "index.jsp";
+        return "register.jsp";
     }
 
     @PostMapping("/register")
@@ -41,10 +41,15 @@ public class MainController {
         User user = userService.register(newUser, result);
         if(result.hasErrors()){
             model.addAttribute("newLogin", new LoginUser());
-            return "index.jsp";
+            return "register.jsp";
         }
         session.setAttribute("userId", user.getId());
         return "redirect:/workouts";
+    }
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login.jsp";
     }
 
     @PostMapping("/login")
@@ -58,7 +63,7 @@ public class MainController {
         User userToLogin = userService.login(newLogin, result);
         if(result.hasErrors()){
             model.addAttribute("newUser", new User());
-            return "index.jsp";
+            return "login.jsp";
         }
         session.setAttribute("userId", userToLogin.getId());
         return "redirect:/workouts";
