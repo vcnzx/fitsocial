@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.project.fitsocial.models.Workout;
 import com.project.fitsocial.repositories.WorkoutRepository;
 
+@Service
 public class WorkoutService {
     
     @Autowired WorkoutRepository workoutRepo;
@@ -29,12 +31,12 @@ public class WorkoutService {
     }
 
     //! UPDATE ONE
-    public void updateBook(Workout workout){
+    public void updateWorkout(Workout workout){
         workoutRepo.save(workout);
     }
 
     //! DELETE
-    public void deleteBook(Long id){
+    public void deleteWorkout(Long id){
         workoutRepo.deleteById(id);
     }
 }

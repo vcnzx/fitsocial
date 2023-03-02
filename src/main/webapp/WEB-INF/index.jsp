@@ -19,18 +19,21 @@
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <style>
-    .bg-image{
-        background-image: url("../Users/adrianlopez/Documents/fitsocial/src/main/resources/images/fitsocial.jpg");
+    body {
+        background-image: url("/images/fitsocial.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
     }
-</style>
-<body class="bg-image">
+    </style>
+<body >
 
 
 <div class="container" style="height:100px;"></div>
     <div class="container bg-light border" style="width: 350px ;">
-        ${userId}
+        
         <div class="container">
-        <h1 class="text-center mb-3 mt-3">Fit Social</h1>
+        <img class="align-content-center" style="height: 200px ;" src="images/fitsocialLogo.PNG" alt="">
     <div class="container">
             <div class="col">
             <h2 class="text-center">Already a member?</h2>
@@ -95,5 +98,15 @@
         </div>    
     
     </div>
+
+    <footer class="p-5  text-white text-center position-relative mt-3">
+        <div class="container">
+            <p class="lead">| Where fitness and social media come together | Copyright &copy; 2022  FitSocial | </p> 
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-cirle text-danger h1"></i>
+            </a>
+        </div>
+
+    </footer>
 </body>
 </html>

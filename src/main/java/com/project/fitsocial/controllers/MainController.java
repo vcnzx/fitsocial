@@ -44,7 +44,7 @@ public class MainController {
             return "index.jsp";
         }
         session.setAttribute("userId", user.getId());
-        return "redirect:/classes";
+        return "redirect:/workouts";
     }
 
     @PostMapping("/login")
@@ -61,7 +61,7 @@ public class MainController {
             return "index.jsp";
         }
         session.setAttribute("userId", userToLogin.getId());
-        return "redirect:/classes";
+        return "redirect:/workouts";
     }
 
     @GetMapping("/welcome")
