@@ -40,30 +40,30 @@
         <div class="row">
             <h2 class="text-center">Create Workout</h2>
     
-            <form:form action="/register" method="post" modelAttribute="workout">
+            <form:form action="/workouts" method="post" modelAttribute="workout">
     
             <div>
             <div class="form-group mt-1">
                 <form:label path="title"></form:label>
                 <form:input class="form-control" placeholder="Post Name" path="title" />
-                <form:errors  path="title" />
+                <form:errors class="text-danger"  path="title" />
             </div>
       
             <div class="form-group mt-1">
                 <form:label path="type"></form:label>
-                <form:select class="form-control custom-select"  path="type">
-                  <form:option value="null">Type</form:option>
+                <form:select class="form-control"  path="type">
+                  <form:option value="">Type</form:option>
                   <form:option value="cardio">Cardio</form:option>
                   <form:option value="weightLifting">weight lifting</form:option>
                   <form:option value="yoga">yoga</form:option>
                   <form:option value="other">other</form:option>
                 </form:select>
-                <form:errors  path="type" />
+                <form:errors class="text-danger" path="type" />
             </div>
     
             <div class="form-group mt-1">
                 <form:label path="targetMuscle"></form:label>
-                <form:select class="form-control custom-select" placeholder="targetMuscle" path="targetMuscle">
+                <form:select class="form-control"  path="targetMuscle">
                   <form:option value=""  >target muscle</form:option>
                   <form:option value="neck">Neck</form:option>
                   <form:option value="shoulder">shoulder</form:option>
@@ -73,18 +73,18 @@
                   <form:option value="glutes">glutes</form:option>
                   <form:option value="legs">legs</form:option>
                 </form:select>
-                <form:errors  path="targetMuscle" />
+                <form:errors class="text-danger" path="targetMuscle" />
             </div>
                 
             <div>
                 <form:label path="equipment"></form:label>
-                <form:select class="form-control custom-select"  path="type">
-                  <form:option value="null">Equipment</form:option>
+                <form:select class="form-control custom-select"  path="equipment">
+                  <form:option value="">Equipment</form:option>
                   <form:option value="machine">machine</form:option>
                   <form:option value="freeWeight">free weights</form:option>
                   <form:option value="bodyWeight">body weight</form:option>
                 </form:select>
-                <form:errors  path="equipment" />
+                <form:errors class="text-danger"  path="equipment" />
             </div>
     
             <div>
@@ -95,13 +95,13 @@
                   <form:option value="intermediate">intermediate</form:option>
                   <form:option value="advanced">advanced</form:option>
                 </form:select>
-                <form:errors  path="difficulty" />
+                <form:errors class="text-danger"  path="difficulty" />
             </div>
 
             <div>
               <form:label path="instructions"></form:label>
               <form:textarea class="form-control mt-1" style="height:150px" placeholder="instructions" path="instructions" />
-              <form:errors  path="instructions" />
+              <form:errors class="text-danger"  path="instructions" />
           </div>
 
             </div>
@@ -117,5 +117,15 @@
     
     </div>
     </div>
+
+    <footer class="p-5  text-white text-center position-relative mt-3">
+      <div class="container">
+          <p class="lead">| Where fitness and social media come together | Copyright &copy; 2022  FitSocial | </p> 
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+              <i class="bi bi-arrow-up-cirle text-danger h1"></i>
+          </a>
+      </div>
+
+  </footer>
 </body>
 </html>
