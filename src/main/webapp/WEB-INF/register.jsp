@@ -20,7 +20,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/fitsocial.jpg");
+        background-image: url("/images/hero2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -35,23 +35,7 @@
         <div class="container">
         <img class="align-content-center" style="height: 200px ;" src="images/fitsocialLogo.PNG" alt="">
     <div class="container">
-            <div class="col">
-            <h2 class="text-center">Already a member?</h2>
-            <div class="form-group">
-                <form:form action="/login" method="post" modelAttribute="newLogin">
-                <div class="form-group mb-1">
-                    <form:label path="email" >email</form:label>
-                    <form:input class="form-control" path="email" />
-                    <form:errors path="email" />
-                </div>
-                <div class="form-group mb-1">
-                <form:label path="password" >password</form:label>
-                <form:input class="form-control" path="password" />
-                <form:errors path="password" />
-                </div>
-                <input class="mb-1 mt-2 btn btn-danger" type="submit" value="login">
-            </form:form>
-        </div>
+            
         </div>
         </div>
         <!-- this is reg -->
@@ -95,14 +79,18 @@
             </form:form>
     
         </div>
-        </div>    
+        </div>  
+        
+        <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
+            <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
+        </div>
     
     </div>
 
     <footer class="p-5  text-white text-center position-relative mt-3">
         <div class="container">
             <p class="lead">| Where fitness and social media come together | Copyright &copy; 2022  FitSocial | </p> 
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <a href="/login" class="position-absolute bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-cirle text-danger h1"></i>
             </a>
         </div>

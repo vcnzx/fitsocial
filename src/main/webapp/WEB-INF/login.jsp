@@ -20,7 +20,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/fitsocial.jpg");
+        background-image: url("/images/hero2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -49,12 +49,15 @@
                 <form:input class="form-control" path="password" />
                 <form:errors path="password" />
                 </div>
-                <input class="mb-1 mt-2 btn btn-danger" type="submit" value="login">
+                <input class="mb-3 mt-2 btn btn-dark" type="submit" value="login">
+                <div class="container" style="height:50px;"></div>
             </form:form>
         </div>
         </div>
         </div>
-        
+        <div class="container bg-light border mt-3 d-flex align-items-center justify-content-center " style="width: 350px ; height: 75px;">
+          <h6 class="text-center"> Already a member? <a href=""> Log in</a></h6>
+      </div>
         
         </div>    
     
