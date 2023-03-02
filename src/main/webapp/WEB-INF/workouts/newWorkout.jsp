@@ -51,7 +51,12 @@
 
             <div class="form-group mt-1">
                 <form:label path="type"></form:label>
-                <form:input class="form-control" placeholder="Type" path="type" />
+                <form:select class="form-control custom-select" placeholder="Type" path="type">
+                  <option selected>Type...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </form:select>
                 <form:errors  path="type" />
             </div>
     
