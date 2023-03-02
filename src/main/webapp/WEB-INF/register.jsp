@@ -74,6 +74,12 @@
                 <form:input class="form-control mt-1" placeholder="Confirm Password" path="confirm" />
                 <form:errors  path="confirm" />
             </div>
+<!-- 
+            <div class="div">
+                <label>Photos: </label>
+                <input type="file" name="image" accept="image/png, image/jpeg" />
+            </div> -->
+
             </div>
             <input class="mt-3 mb-3 btn btn-dark border" type="submit" value="Register">
             </form:form>

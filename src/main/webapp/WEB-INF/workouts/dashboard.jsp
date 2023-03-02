@@ -19,7 +19,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/hero2.jpg");
+        background-image: url("/images/hero3.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -63,6 +63,35 @@
             </div>
         </div>
     </nav>
+
+    <div class="container" style="height: 200px;"></div>
+
+    <!-- card -->
+    <c:forEach var="workout" items="${workouts}">
+    <div class="container shadow-lg p-3 mb-5 rounded bg-dark justify-content-center" style="width: 25% ;">
+        <div class="card">
+            <div class="card-body justify-content-center">
+                <h1 class="text-center">${workout.title}</h1>
+                Type of work out:  <h6>${workout.type}</h6>
+                Target muscle: <h6>${workout.targetMuscle}</h6>
+                Equipment: <h6>${workout.equipment}</h6>
+                Difficulty: <h6>${workout.difficulty}</h6>
+                Instructions: <h6>${workout.instructions}</h6>
+            </div>
+        </div>
+    </div>
+    </c:forEach>
+
+
+
+    <footer class="p-5  text-white text-center position-relative mt-3">
+        <div class="container">
+            <p class="lead">| Where fitness and social media come together | Copyright &copy; 2022  FitSocial | </p> 
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-cirle text-danger h1"></i>
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
