@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -91,4 +92,24 @@ public class MainController {
         // redirect to log in/register page
         return "redirect:/";
     }
+
+
+  // read one 
+    @GetMapping("profile/{id}") // all were doing is getting data from db
+    public String show(@PathVariable("id")Long id,Model model){
+    User user = userService.getOne(id);
+    model.addAttribute("user",user);
+    return "profile.jsp";
+    }
+
+    
+    
+// // Read one
+// @GetMapping ("/names/{id}")
+// public String show(@PathVariable("id")Long id, Model model){
+//     Name name = nameService.getOne(id);
+//     model.addAttribute("name", name);
+//     return "names/show.jsp";
+// }
+
 }
