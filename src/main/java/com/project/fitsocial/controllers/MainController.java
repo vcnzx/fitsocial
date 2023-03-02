@@ -48,7 +48,8 @@ public class MainController {
     }
 
     @GetMapping("/login")
-    public String loginPage(){
+    public String loginPage(@ModelAttribute("newLogin") LoginUser loginUser){
+        
         return "login.jsp";
     }
 
