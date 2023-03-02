@@ -19,7 +19,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/hero3.jpeg");
+        background-image: url("/images/hero2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -71,6 +71,8 @@
     <div class="container shadow-lg p-3 mb-5 rounded bg-dark justify-content-center" style="width: 25% ;">
         <div class="card">
             <div class="card-body justify-content-center">
+                
+                ${workout.user.fullName}
                 <h1 class="text-center">${workout.title}</h1>
                 Type of work out:  <h6>${workout.type}</h6>
                 Target muscle: <h6>${workout.targetMuscle}</h6>

@@ -142,6 +142,16 @@ public class Workout {
     }
 
 
+    public User getUser() {
+        return this.user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
+
     @PrePersist
     protected void onCreate(){
         this.createdAt = new Date();
