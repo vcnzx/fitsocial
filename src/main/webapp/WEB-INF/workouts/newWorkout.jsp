@@ -38,7 +38,7 @@
         </div>
         <!-- this is reg -->
         <div class="row">
-            <h2 class="text-center">Create Post</h2>
+            <h2 class="text-center">Create Workout</h2>
     
             <form:form action="/register" method="post" modelAttribute="workout">
     
@@ -48,44 +48,64 @@
                 <form:input class="form-control" placeholder="Post Name" path="title" />
                 <form:errors  path="title" />
             </div>
-
+      
             <div class="form-group mt-1">
                 <form:label path="type"></form:label>
-                <form:select class="form-control custom-select" placeholder="Type" path="type">
-                  <option selected>Type...</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <form:select class="form-control custom-select"  path="type">
+                  <form:option value="null">Type</form:option>
+                  <form:option value="cardio">Cardio</form:option>
+                  <form:option value="weightLifting">weight lifting</form:option>
+                  <form:option value="yoga">yoga</form:option>
+                  <form:option value="other">other</form:option>
                 </form:select>
                 <form:errors  path="type" />
             </div>
     
             <div class="form-group mt-1">
                 <form:label path="targetMuscle"></form:label>
-                <form:input class="form-control" placeholder="target muscle" path="targetMuscle" />
+                <form:select class="form-control custom-select" placeholder="targetMuscle" path="targetMuscle">
+                  <form:option value=""  >target muscle</form:option>
+                  <form:option value="neck">Neck</form:option>
+                  <form:option value="shoulder">shoulder</form:option>
+                  <form:option value="chest">chest</form:option>
+                  <form:option value="back">back</form:option>
+                  <form:option value="torso">torso</form:option>
+                  <form:option value="glutes">glutes</form:option>
+                  <form:option value="legs">legs</form:option>
+                </form:select>
                 <form:errors  path="targetMuscle" />
             </div>
                 
             <div>
                 <form:label path="equipment"></form:label>
-                <form:input class="form-control  mt-1 " placeholder="equipment"  path="equipment" />
+                <form:select class="form-control custom-select"  path="type">
+                  <form:option value="null">Equipment</form:option>
+                  <form:option value="machine">machine</form:option>
+                  <form:option value="freeWeight">free weights</form:option>
+                  <form:option value="bodyWeight">body weight</form:option>
+                </form:select>
                 <form:errors  path="equipment" />
             </div>
     
             <div>
                 <form:label path="difficulty"></form:label>
-                <form:input class="form-control mt-1" placeholder="difficulty" path="difficulty" />
+                <form:select class="form-control custom-select"  path="type">
+                  <form:option value="null">Difficulty</form:option>
+                  <form:option value="beginner">beginner</form:option>
+                  <form:option value="intermediate">intermediate</form:option>
+                  <form:option value="advanced">advanced</form:option>
+                </form:select>
                 <form:errors  path="difficulty" />
             </div>
 
             <div>
               <form:label path="instructions"></form:label>
-              <form:input class="form-control mt-1" placeholder="target muscle" path="instructions" />
+              <form:textarea class="form-control mt-1" style="height:150px" placeholder="instructions" path="instructions" />
               <form:errors  path="instructions" />
           </div>
 
             </div>
-            <input class="mt-3 mb-3 btn btn-dark btn-md " style="width:375px;" type="submit" value="Register">
+            <input class="mt-3 mb-3 btn btn-dark btn-md " style="width:375px;" type="submit" value="Post">
             </form:form>
     
         </div>
