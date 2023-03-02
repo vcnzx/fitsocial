@@ -89,8 +89,8 @@
     
             <div>
                 <form:label path="difficulty"></form:label>
-                <form:select class="form-control custom-select"  path="type">
-                  <form:option value="null">Difficulty</form:option>
+                <form:select class="form-control custom-select"  path="difficulty">
+                  <form:option value="">Difficulty</form:option>
                   <form:option value="beginner">beginner</form:option>
                   <form:option value="intermediate">intermediate</form:option>
                   <form:option value="advanced">advanced</form:option>
