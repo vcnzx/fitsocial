@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tacos</title>
+    <title>Fit Social</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@
        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <!-- <a href="#" class="navbar-brand"> <img src= "{{url_for('static', filename='bodybuildz.png')}}" class="img-fluid w-50 " /></a> -->
-            <a href="/workouts" class="navbar-brand"> <img class="align-content-center" style="height: 100px ;" src="images/fitsocialLogoWhite.PNG" alt=""></a>
+            <a href="/workouts" class="navbar-brand"> <img class="align-content-center" style="height: 100px ;" src="images/fitsocialLogoWhite.PNG" alt="Logo"></a>
 
 
             <button 
@@ -66,31 +66,19 @@
 
     <div class="container" style="height: 200px;"></div>
 
-    <!-- card -->
-    <c:forEach var="user" items="${users}">
-    <div class="container shadow-lg p-3 mb-5 rounded bg-dark justify-content-center" style="width: 25% ;">
-        <div class="card">
-            <div class="card-body justify-content-center">
-                <div class="container" style="height: 400px ;"></div>
-                ${user.fullName}
-                hello world
+    <div class="container">
+        <div class="card padding-3">
+            <div class="card-header">
+                <img class="align-content-center mt-3 mb-3" style="height:100px;" src="images/user-circle.png" alt="Profile picture">
+                <h1>${user.fullName}</h1>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <h3>Workouts</h3>
             </div>
         </div>
-    </div>
-    </c:forEach>
-    ${user.fullName}
 
-    <c:forEach var="user" items="${users}">
-      <div class="container shadow-lg p-3 mb-5 rounded bg-dark justify-content-center" style="width: 25% ;">
-          <div class="card">
-              <div class="card-body justify-content-center">
-                  <div class="container" style="height: 400px ;"></div>
-                  ${user.fullName}
-                  hello world
-              </div>
-          </div>
-      </div>
-      </c:forEach>
+    </div>
+
 
 
     <footer class="p-5  text-white text-center position-relative mt-3">
