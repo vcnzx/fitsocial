@@ -56,7 +56,7 @@ public class Workout {
     public Workout() {
     }
 
-    public Workout(Long id, String title, String type, String targetMuscle, String equipment, String difficulty, String instructions, Date createdAt, Date updatedAt) {
+    public Workout(Long id, String title, String type, String targetMuscle, String equipment, String difficulty, String instructions, Date createdAt, Date updatedAt, User user) {
         this.id = id;
         this.title = title;
         this.type = type;
@@ -66,6 +66,7 @@ public class Workout {
         this.instructions = instructions;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+        this.user = user;
     }
 
 

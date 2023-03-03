@@ -31,7 +31,7 @@
        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <!-- <a href="#" class="navbar-brand"> <img src= "{{url_for('static', filename='bodybuildz.png')}}" class="img-fluid w-50 " /></a> -->
-            <a href="/workouts" class="navbar-brand"> <img class="align-content-center" style="height: 100px ;" src="images/fitsocialLogoWhite.PNG" alt="Logo"></a>
+            <a href="/workouts" class="navbar-brand"> <img class="align-content-center" style="height: 100px ;" src="/images/fitsocialLogoWhite.PNG" alt="Logo"></a>
 
 
             <button 
@@ -69,7 +69,7 @@
     <div class="container">
         <div class="card padding-3">
             <div class="card-header">
-                <img class="align-content-center mt-3 mb-3" style="height:100px;" src="images/user-circle.png" alt="Profile picture">
+                <img class="align-content-center mt-3 mb-3" style="height:100px;" src="/images/user-circle.png" alt="Profile picture">
                 <h1>${user.fullName}</h1>
             </div>
             <div class="card-body d-flex justify-content-center">

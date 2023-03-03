@@ -20,7 +20,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/hero2.jpg");
+        background-image: url("/images/heroblue.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -33,7 +33,7 @@
     <div class="container bg-light border" style="width: 350px ;">
         
         <div class="container">
-        <img class="align-content-center" style="height: 200px ;" src="images/fitsocialLogo.PNG" alt="">
+        <img class="align-content-center" style="height: 200px ;" src="/images/fitsocialLogo.PNG" alt="">
     <div class="container">
             
         </div>

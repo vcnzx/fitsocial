@@ -72,7 +72,7 @@
         <div class="card">
             <div class="card-body justify-content-center">
                 
-                <a href="/profile/${workout.user.id}">${workout.user.fullName}</a>
+                <a href="/profile/${workout.user.id}">${workout.user.userName}</a>
                 
                 <h1 class="text-center">${workout.title}</h1>
                 Type of work out:  <h6>${workout.type}</h6>
