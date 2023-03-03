@@ -19,7 +19,7 @@
 </head>
 <style>
     body {
-        background-image: url("/images/hero2.jpg");
+        background-image: url("/images/heroblue.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
@@ -66,32 +66,56 @@
 
     <div class="container" style="height: 200px;"></div>
 
-    <div class="container">
+    <div class="container " style="width: 50% ;">
         <div class="card padding-3">
-            <div class="card-header">
-                <img class="align-content-center mt-3 mb-3" style="height:100px;" src="/images/user-circle.png" alt="Profile picture">
-                <h1>${user.fullName}</h1>
+            <div class="card-header bg-dark d-flex">
+                <!-- <div class="container  d-flex justify-content-center " style="width: 40% ;"><img class="align-content-center mt-3 mb-3" style="height:100px;" src="/images/user-circle.png" alt="Profile picture"></div> -->
+                <div class="container  d-flex justify-content-center " style="width: 40% ;"> <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:100px;" src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture"> </div>
+                <div class="container p-3 d-flex">
+                  <!-- <h1>${user.fullName}</h1> -->
+                  <div class="footer rounded p-3 d-flex justify-content-around align-content-center d-flex align-items-center " style=" width: auto; height: 28px; ">
+                    <h3 class="text-muted">@${user.userName}</h3>
+                    <button class="btn btn-primary m-3 mt-3"> Follow </button>
+                    <button class="btn btn-primary m-3 mt-3"> Message </button>
+                </div>
+                </div>
+        
             </div>
+            
             <div class="card-body d-flex justify-content-center">
                 <h3>Workouts</h3>
             </div>
             <div class="d-flex flex-wrap justify-content-center gap-5 mb-3">
-                <c:forEach var="workout" items="${user.workouts}">
-                <div class="card border border-dark " style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">${workout.title}</h5>
-                        <p class="card-text">${workout.instructions}.</p>
-                        <p class="card-text">Difficulty: ${workout.difficulty}.</p>
-                    </div>
-                    <ul class="list-group list-group-flush"> <p>Equipment for workout</p>
-                        <li class="list-group-item">${workout.equipment}</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="/workouts/new" class="btn btn-primary"> Post new workout!</a>
-                        <a href="#" class="btn btn-primary">Another link</a>
-                    </div>
-                </div>
-        </c:forEach>
+              
+            <!-- card -->
+    <c:forEach var="workout" items="${user.workouts}">
+      <div class="container shadow-lg p-3 mb-5 rounded bg-light  justify-content-center" style="width: 35% ; min-height: 500px;">
+          <div class="card rounded" style="min-height: 500px ;">
+              <div class="card-body rounded justify-content-center bg-dark" >
+                  <div class="card-header border-light ">
+                      <!-- <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="/images/user-circle.png" alt="Profile picture">  -->
+                      <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture"> 
+                      <a href="/profile/${workout.user.id}" class="text-decoration-none text-muted">    @${workout.user.userName}</a>
+  
+                  </div>
+                  <h2 class="text-center text-light mb-4">${workout.title}</h2>
+                  <h6 class="text-light text-center">Type of work out: ${workout.type}</h6>
+                  <h6 class="text-light text-center"> Target muscle: ${workout.targetMuscle}</h6>
+                  <h6 class="text-light text-center"> Equipment:${workout.equipment}</h6>
+                  <h6 class="text-light text-center">Difficulty: ${workout.difficulty}</h6>
+                  <h6 class="text-light text-center"> Instructions: ${workout.instructions}</h6>
+  
+                  
+              </div>
+              <div class="footer rounded d-flex justify-content-around align-content-center d-flex align-items-center " style="background-color: silver ; width: auto; height: 28px; ">
+                  <img src="/images/hand-thumbs-up.svg"  style="height: 20px ;" alt="">
+                  <img src="/images/bookmark-plus.svg"  style="height: 20px ;" alt="">
+                  <img src="/images/share-fill.svg"  style="height: 20px ;" alt="">
+              </div>
+              
+          </div>
+      </div>
+      </c:forEach>
             </div>
         </div>
 
