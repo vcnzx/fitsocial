@@ -70,13 +70,13 @@
                             <div class="card padding-3">
                                 <div class="card-header bg-dark d-flex">
                                     <!-- <div class="container  d-flex justify-content-center " style="width: 40% ;"><img class="align-content-center mt-3 mb-3" style="height:100px;" src="/images/user-circle.png" alt="Profile picture"></div> -->
-                                    <div class="container  d-flex justify-content-center " style="width: 40% ;"> <img
+                                    <div class="d-flex justify-content-center " style="width: 40% ;"> <img
                                             class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:100px;"
                                             src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture">
                                     </div>
-                                    <div class="container p-3 d-flex">
+                                    <div class="p-3 d-flex">
                                         <!-- <h1>${user.fullName}</h1> -->
-                                        <div class="footer rounded p-3 d-flex justify-content-around align-content-center align-items-center "
+                                        <div class="rounded p-3 d-flex justify-content-around align-content-center align-items-center "
                                             style=" width: auto; height: 28px; ">
                                             <h3 class="text-muted">@${user.userName}</h3>
                                             <button class="btn btn-primary m-3 mt-3"> Follow </button>

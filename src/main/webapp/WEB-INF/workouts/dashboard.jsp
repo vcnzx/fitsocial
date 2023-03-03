@@ -64,37 +64,40 @@
         </div>
     </nav>
 
-    <div class="container" style="height: 200px;"></div>
+    <div class="container" style="height: 110px;"></div>
 
     <!-- card -->
+    <div class="container d-flex flex-column p-3 align-items-center justify-content-center w-50" style="min-height: 500px;">
+        <h2 style="color: azure;">Workout Feed</h2>
     <c:forEach var="workout" items="${workouts}">
-    <div class="container shadow-lg p-3 mb-5 rounded bg-light  justify-content-center" style="width: 25% ; min-height: 500px;">
-        <div class="card rounded" style="min-height: 500px ;">
-            <div class="card-body rounded justify-content-center bg-dark" >
-                <div class="card-header border-light ">
-                    <!-- <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="/images/user-circle.png" alt="Profile picture">  -->
-                    <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture"> 
-                    <a href="/profile/${workout.user.id}" class="text-decoration-none text-muted">    @${workout.user.userName}</a>
-
+        <div class="card d-flex justify-content-center shadow-lg p-3 rounded bg-light mb-3">
+            <div class="card rounded" style="min-height: 500px ; width: 300px;">
+                <div class="card-body rounded justify-content-center bg-dark" >
+                    <div class="card-header border-light ">
+                        <!-- <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="/images/user-circle.png" alt="Profile picture">  -->
+                        <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture"> 
+                        <a href="/profile/${workout.user.id}" class="text-decoration-none text-muted">    @${workout.user.userName}</a>
+    
+                    </div>
+                    <h2 class="text-center text-light mb-4">${workout.title}</h2>
+                    <h6 class="text-light text-center">Type of work out: ${workout.type}</h6>
+                    <h6 class="text-light text-center"> Target muscle: ${workout.targetMuscle}</h6>
+                    <h6 class="text-light text-center"> Equipment:${workout.equipment}</h6>
+                    <h6 class="text-light text-center">Difficulty: ${workout.difficulty}</h6>
+                    <h6 class="text-light text-center"> Instructions: ${workout.instructions}</h6>
+    
+                    
                 </div>
-                <h2 class="text-center text-light mb-4">${workout.title}</h2>
-                <h6 class="text-light text-center">Type of work out: ${workout.type}</h6>
-                <h6 class="text-light text-center"> Target muscle: ${workout.targetMuscle}</h6>
-                <h6 class="text-light text-center"> Equipment:${workout.equipment}</h6>
-                <h6 class="text-light text-center">Difficulty: ${workout.difficulty}</h6>
-                <h6 class="text-light text-center"> Instructions: ${workout.instructions}</h6>
-
+                <div class="footer rounded d-flex justify-content-around align-content-center d-flex align-items-center " style="background-color: silver ; width: auto; height: 28px; ">
+                    <img src="/images/hand-thumbs-up.svg"  style="height: 20px ;" alt="">
+                    <img src="/images/bookmark-plus.svg"  style="height: 20px ;" alt="">
+                    <img src="/images/share-fill.svg"  style="height: 20px ;" alt="">
+                </div>
                 
             </div>
-            <div class="footer rounded d-flex justify-content-around align-content-center d-flex align-items-center " style="background-color: silver ; width: auto; height: 28px; ">
-                <img src="/images/hand-thumbs-up.svg"  style="height: 20px ;" alt="">
-                <img src="/images/bookmark-plus.svg"  style="height: 20px ;" alt="">
-                <img src="/images/share-fill.svg"  style="height: 20px ;" alt="">
-            </div>
-            
         </div>
-    </div>
     </c:forEach>
+</div>
 
 
 
