@@ -75,9 +75,8 @@
             <div class="card-body d-flex justify-content-center">
                 <h3>Workouts</h3>
             </div>
-            <div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mb-3">
                 <c:forEach var="workout" items="${user.workouts}">
-            <div class="col">
                 <div class="card border border-dark " style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">${workout.title}</h5>
@@ -92,7 +91,6 @@
                         <a href="#" class="btn btn-primary">Another link</a>
                     </div>
                 </div>
-            </div>
         </c:forEach>
             </div>
         </div>
