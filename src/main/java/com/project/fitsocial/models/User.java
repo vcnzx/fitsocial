@@ -114,6 +114,13 @@ public class User {
     this.fullName = fullName;
   }
 
+  public List<Workout> getWorkouts() {
+    return workouts;
+  }
 
+
+  public void setWorkouts(List<Workout> workouts) {
+    this.workouts = workouts;
+  }
 }
     

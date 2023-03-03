@@ -41,7 +41,7 @@
             <h2 class="text-center">Create Workout</h2>
     
             <form:form action="/workouts" method="post" modelAttribute="workout">
-    
+              <form:hidden path="user" value="${userId}"></form:hidden>
             <div>
             <div class="form-group mt-1">
                 <form:label path="title"></form:label>
