@@ -21,17 +21,18 @@
                     </head>
                     <style>
                         body {
-                            background-image: url("/images/heroblue.jpg");
+                            /* background-image: url("/images/hero3.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
-                            min-height: 100vh;
+                            min-height: 100vh; */
+                            background-color: #8367c7;
                         }
                     </style>
 
                     <body>
                         dashboard
                         <!-- ########### this is our nav bar ############ -->
-                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+                        <nav class="navbar navbar-expand-lg  navbar-dark py-3 fixed-top" style="background-color: #5603ad  ;">
                             <div class="container">
                                 <!-- <a href="#" class="navbar-brand"> <img src= "{{url_for('static', filename='bodybuildz.png')}}" class="img-fluid w-50 " /></a> -->
                                 <a href="/workouts" class="navbar-brand"> <img class="align-content-center"
@@ -55,6 +56,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a href="/profile" class="nav-link">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/workouts/tracker" class="nav-link">Workout Tracker</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="/logout" type="submit" value="logout" class="nav-link"> Logout</a>
@@ -86,15 +90,15 @@
 
                                 </div>
 
-                                <div class="card-body d-flex justify-content-center">
+                                <div class="card-body d-flex justify-content-center" style="background-color: #c77dff ;">
                                     <h3>Workouts</h3>
                                 </div>
-                                <div class="d-flex flex-wrap justify-content-center gap-5 mb-3">
+                                <div class="d-flex flex-wrap justify-content-center gap-5 mb-3" style="background-color: #c77dff ;">
 
                                     <!-- card -->
                                     <c:forEach var="workout" items="${user.workouts}">
-                                        <div class="shadow-lg p-3 mb-5 rounded bg-light  justify-content-center w-35"
-                                            style="min-height: 500px;">
+                                        <div class="shadow-lg p-3 mb-5 rounded   justify-content-center w-35"
+                                            style="min-height: 500px; background-color: #c77dff ;">
                                             <div class="card rounded" style="min-height: 500px ; width: 300px;">
                                                 <div class="card-body rounded justify-content-center bg-dark">
                                                     <div class="card-header border-light ">
