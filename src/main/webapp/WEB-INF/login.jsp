@@ -19,11 +19,18 @@
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <style>
-    body {
+    /* body {
         background-image: url("/images/heroblue.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
+    } */
+    body {
+        /* background-image: url("/images/heroblue.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; */
+        background-color: #4b3f72;
     }
     </style>
 <body >

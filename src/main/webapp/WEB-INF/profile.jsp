@@ -21,18 +21,18 @@
                     </head>
                     <style>
                         body {
-                            /* background-image: url("/images/hero3.jpg");
+                            /* background-image: url("/images/heroblue.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
                             min-height: 100vh; */
-                            background-color: #8367c7;
+                            background-color: #4b3f72;
                         }
                     </style>
 
                     <body>
                         dashboard
                         <!-- ########### this is our nav bar ############ -->
-                        <nav class="navbar navbar-expand-lg  navbar-dark py-3 fixed-top" style="background-color: #5603ad  ;">
+                        <nav class="navbar navbar-expand-lg  navbar-dark py-3 fixed-top" style="background-color: #1f2041  ;">
                             <div class="container">
                                 <!-- <a href="#" class="navbar-brand"> <img src= "{{url_for('static', filename='bodybuildz.png')}}" class="img-fluid w-50 " /></a> -->
                                 <a href="/workouts" class="navbar-brand"> <img class="align-content-center"
@@ -75,7 +75,7 @@
                                 <div class="card-header bg-dark d-flex">
                                     <!-- <div class="container  d-flex justify-content-center " style="width: 40% ;"><img class="align-content-center mt-3 mb-3" style="height:100px;" src="/images/user-circle.png" alt="Profile picture"></div> -->
                                     <div class="d-flex justify-content-center " style="width: 40% ;"> <img
-                                            class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:100px;"
+                                            class="align-content-center mt-3 mb-3 gap-3 m-1 rounded-circle" style="height:100px;"
                                             src="https://randomuser.me/api/portraits/men/72.jpg" alt="Profile picture">
                                     </div>
                                     <div class="p-3 d-flex">
@@ -86,24 +86,23 @@
                                             <button class="btn btn-primary m-3 mt-3"> Follow </button>
                                             <button class="btn btn-primary m-3 mt-3"> Message </button>
                                         </div>
+                                        
                                     </div>
-
                                 </div>
-
-                                <div class="card-body d-flex justify-content-center" style="background-color: #c77dff ;">
-                                    <h3>Workouts</h3>
+                                <div class="card-body d-flex justify-content-center bg-dark" >
+                                    <h3 class="text-muted">${user.fullName}'s Workouts</h3>
                                 </div>
-                                <div class="d-flex flex-wrap justify-content-center gap-5 mb-3" style="background-color: #c77dff ;">
+                                <div class="d-flex flex-wrap justify-content-center gap-5 mb-3 bg-dark">
 
                                     <!-- card -->
                                     <c:forEach var="workout" items="${user.workouts}">
                                         <div class="shadow-lg p-3 mb-5 rounded   justify-content-center w-35"
-                                            style="min-height: 500px; background-color: #c77dff ;">
+                                            style="min-height: 500px; background-color: #4b3f72 ;">
                                             <div class="card rounded" style="min-height: 500px ; width: 300px;">
                                                 <div class="card-body rounded justify-content-center bg-dark">
                                                     <div class="card-header border-light ">
                                                         <!-- <img class="align-content-center mt-3 mb-3 gap-3 m-1" style="height:50px;" src="/images/user-circle.png" alt="Profile picture">  -->
-                                                        <img class="align-content-center mt-3 mb-3 gap-3 m-1"
+                                                        <img class="align-content-center mt-3 mb-3 gap-3 m-1 rounded-circle"
                                                             style="height:50px;"
                                                             src="https://randomuser.me/api/portraits/men/72.jpg"
                                                             alt="Profile picture">
