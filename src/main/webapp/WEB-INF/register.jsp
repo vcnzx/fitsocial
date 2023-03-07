@@ -72,13 +72,13 @@
                 
             <div>
                 <form:label path="password"></form:label>
-                <form:input class="form-control mt-1" placeholder="Password" path="password" />
+                <form:password class="form-control mt-1" placeholder="Password" path="password" />
                 <form:errors  path="password" />
             </div>
     
             <div>
                 <form:label path="confirm"></form:label>
-                <form:input class="form-control mt-1" placeholder="Confirm Password" path="confirm" />
+                <form:password class="form-control mt-1" placeholder="Confirm Password" path="confirm" />
                 <form:errors  path="confirm" />
             </div>
 <!-- 

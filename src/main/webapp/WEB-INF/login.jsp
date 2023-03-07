@@ -53,7 +53,7 @@
                 </div>
                 <div class="form-group mb-1">
                 <form:label path="password" ></form:label>
-                <form:input class="form-control" placeholder="Password" path="password" />
+                <form:password class="form-control" placeholder="Password" path="password" />
                 <form:errors path="password" />
                 </div>
                 <input class="mb-3 mt-2 btn btn-dark" type="submit" value="login">
