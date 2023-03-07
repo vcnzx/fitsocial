@@ -98,5 +98,13 @@ public class PostController {
   }
 
 
+  // workout controller
+
+  @GetMapping("/workouts/tracker")
+  public String workoutTracker(){
+    return "workouts/workoutTracker.jsp";
+  }
+
+
 
 }
