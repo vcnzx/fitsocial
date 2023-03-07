@@ -19,11 +19,12 @@
 </head>
 <style>
   body {
-      background-image: url("/images/heroblue.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 100vh;
-  }
+        /* background-image: url("/images/heroblue.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; */
+        background-color: #4b3f72;
+    }
   </style>
 <body>
     <div class="container">

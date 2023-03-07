@@ -43,6 +43,16 @@ public class Workout {
     @NotBlank
     private String instructions;
 
+
+    @NotBlank
+    private Integer calories;
+
+    
+    @NotBlank
+    private Date date;
+
+    
+
     @Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date createdAt;

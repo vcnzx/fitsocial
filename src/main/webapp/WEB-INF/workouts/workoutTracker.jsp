@@ -68,9 +68,13 @@
         </div>
     </nav>
 
-    <div class="container" style="height: 110px;"></div>
+    <div class="container" style="height: 150px;"></div>
 
-  
+  <div class="container" style="background-color: #1f2041">
+    <h1 class="text-muted text-center ">Fitness Tracker</h1>
+<!--  what do i expect in a tracker -->
+<!-- exercise name , time , date , calories  -->
+  </div>
 
 
     <footer class="p-5  text-white text-center position-relative mt-3">
